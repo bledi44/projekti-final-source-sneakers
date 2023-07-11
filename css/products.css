@@ -1,0 +1,189 @@
+@import url("style.css");
+
+.products-main{
+    width: 100%;
+}
+.search-section{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-content: end;
+    padding: 20px;
+    height: 20vh;
+    margin-bottom: 40px;
+}
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+}
+.category-text{
+    display: inline-block;
+    margin: 0px 15px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.category-text.selected{
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+}
+.searchbar{
+    max-width: 100%;
+    width: 350px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 14px 12px;
+    display: flex;
+}
+.searchbar button{
+    width: 15%;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+.searchbar input{
+    max-width: 100%;
+    width: 85%;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 16px;
+    color: #aaa;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+}
+.sort-div{
+    display: flex;
+    align-items: center;
+}
+.sort-div p{
+    font-size: 32px;
+    margin: 0px 10px;
+}
+.sort-div button{
+    font-size: 32px;
+    border: none;
+    background: transparent;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.products-section{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.products-section > h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cards-container{
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #848484;
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    
+}
+.card-text-div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-size: 24px;
+}
+.card-category{
+    color: #787878;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.card-price{
+    font-size: 24px;
+}
+.card-price.available{
+    color: #04AA32;
+}
+.card-price.unavailable{
+    color: #E43C3C;
+}
+.card-warning{
+    color: #E43C3C;
+}
+.card-image{
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+}
+.card button{
+    color: white;
+    font-size: 24px;
+    background-color: #43A4B9;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.semi-transparent{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.semi-transparent img{
+    width: 100%;
+    max-width: 250px;
+}
+@media screen and (max-width:1050px){
+    .categories{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .category-text{
+        font-size: 24px;
+        margin:10px 0px;
+        text-align: center;
+    }
+    .searchbar-container{
+        display: flex;
+        align-items: center;
+    }
+    .searchbar{
+        max-width: 250px;
+    }
+    .sort-container{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .sort-div p{
+        font-size: 24px;
+        margin: 5px;
+    }
+    .sort-div button{
+        font-size: 24px;
+        margin: 5px;
+    }
+}

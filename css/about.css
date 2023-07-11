@@ -1,0 +1,60 @@
+@import url("style.css");
+
+.about-main{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+.about-section{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    padding-bottom:40px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.about-center{
+    width: 100%;
+    max-width: 1240px;
+    padding: 20px;
+}
+.about-title{
+    font-size: 58px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.about-desc{
+    font-size: 24px;
+    color: #525252;
+}
+.brands-section{
+    position: relative;
+    padding: 40px;
+    background-color: #43A4B9;
+    box-sizing: border-box;
+}
+.brands-shoe{
+    position: absolute;
+    left: 50px;
+    top:-250px;
+    width: min(75%,400px);
+}
+.brands-title{
+    margin: 110px 0px;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    border-bottom: 50px;
+}
+.brands-logos-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;;
+}
+.brand-logo{
+    width: 50%;
+    object-fit: contain;
+    max-width: 340px;
+}

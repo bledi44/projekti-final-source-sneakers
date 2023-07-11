@@ -1,0 +1,91 @@
+@import url("style.css");
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 110vh;
+    background:url("/images/bubbles\ xl.svg");
+    background-size: cover;
+    z-index: -10;
+    background-repeat:no-repeat;
+}
+.text-part-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-part{
+    width: 50%;
+}
+.hero-title{
+font-size: 48px;
+margin-bottom: 40px;
+}
+.hero-desc{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.shopping-btn{
+    color: #43A4B9;
+    font-size: 24px;
+    text-decoration: none;
+    outline: 2px solid #43A4B9;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cards-section{
+    width: 100%;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.whyus{
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.cards-container{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* padding: 10px 20px; */
+}
+.card{
+max-width: 270px;
+padding: 30px;
+margin: 30px;
+text-align: center;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.card-icon{
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.card-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.card-description{
+    color: #525252;
+}
+@media screen and (max-width:1050px) {
+    .hero{
+        grid-template-columns: 1fr;
+        background-position: right;
+    }
+    .image-part img{
+        width: 100%;
+        max-width: 577px;
+    }
+    .text-part{
+        padding-top: 50px;
+    }
+}

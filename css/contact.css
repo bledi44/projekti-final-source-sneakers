@@ -1,0 +1,96 @@
+@import url("style.css");
+.contact-main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background:radial-gradient(#fff, #fdfcfc);
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.email-section{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+}
+.email-section h1{
+    padding: 5px 10px;
+}
+.fullname{
+    display: flex;
+}
+.email-section input{
+    padding: 10px 20px;
+    display: block;
+    margin: 10px;
+}
+form{
+    box-sizing: border-box;
+}
+.email-subject{
+    max-width: 100%;
+    width: 95%;
+    box-sizing: border-box;
+}
+.email-message{
+    max-width: 100%;
+    width: 95%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 10px;
+    resize: none;
+}
+.information-section{
+    width: 50%;
+    max-width: 350px;
+    background-color: #43A4B9;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+    padding: 20px;
+    color: white;
+}
+.info-div{
+    margin: 20px 0px;
+}
+.info-div button{
+    width: 10%;
+    max-width: 32px;
+    padding: 10px;
+    max-height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 5px;
+}
+.info-div p{
+    word-break: normal;
+}
+.info-div span{
+    font-weight: bold;
+}
+.info-div i{
+    color: white;
+}
+@media screen and (max-width:1050px){
+    .contact-main{
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .information-section{
+        margin:10px;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    .info-div button{
+        object-fit: contain;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
